@@ -8,12 +8,12 @@ class Owner
         @species = species
         @pets = {fishes: [], cats: [], dogs: []}
 
-        OWNER << self
+        @@all << self
     end
 
     def self.all
 #returns all of the info from the OWNER that has been created.
-        OWNER
+        @@all
     end
 
     def self.count
