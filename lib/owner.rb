@@ -17,12 +17,12 @@ class Owner
     end
 
     def self.count
-        OWNER.length
+        @@all.length
     end
 
     def self.reset_all
 #resets any data that the owner class has to zero.
-        OWNER.clear
+        @@all.clear
     end
 
     def say_species
